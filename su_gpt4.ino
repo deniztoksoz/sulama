@@ -1,4 +1,4 @@
-/*
+/* GEMİNİ
 Açıklamalar:
 Kütüphaneler: Gerekli kütüphaneler dahil edildi.
 Pin Tanımları: RTC, röle ve Bluetooth modülünün Arduino üzerindeki bağlantı pinleri tanımlandı. SoftwareSerial kütüphanesi kullanılarak Bluetooth için yazılımsal seri port oluşturuldu (RX ve TX pinlerini Arduino'nun dijital pinlerine bağlamanız gerekecek).
