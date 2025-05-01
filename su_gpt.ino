@@ -1,4 +1,4 @@
-/*
+/* CHATGPT
 Gereksinimler:
 Arduino UNO
 
