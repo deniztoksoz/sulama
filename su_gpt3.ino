@@ -1,4 +1,4 @@
-/*
+/* DEEPSEEK
 Bluetooth Komutları
 Program Ayarlama:
 
