@@ -1,3 +1,45 @@
+/*
+Gereksinimler:
+Arduino UNO
+
+D1302 RTC (Real Time Clock) modülü
+
+Röle modülü
+
+Sulama sistemi (pompa veya vana)
+
+Bağlantı kabloları
+
+Devre Bağlantıları:
+D1302 Saat Modülü Bağlantıları:
+
+VCC → Arduino 5V
+
+GND → Arduino GND
+
+SCL → Arduino A5 (I2C saat modülü)
+
+SDA → Arduino A4 (I2C saat modülü)
+
+Röle Bağlantıları:
+
+VCC → Arduino 5V
+
+GND → Arduino GND
+
+IN → Arduino D2 (Dijital pin)
+
+Rölenin NO (Normalde Açık) terminali sulama sistemine bağlanacak.
+
+Kod Açıklaması:
+RTC (D1302) saat modülünü kullanacağız ve bu modülden saat, gün, ay gibi bilgileri alacağız.
+
+Röleyi kullanarak sulama sistemini kontrol edeceğiz. Haftada 2 gün, her biri 5 saat çalışacak şekilde programı yazacağız.
+
+Kodda her gün saat 09:00'da sulama başlatılacak ve 14:00'te sulama duracaktır.
+*/
+
+
 #include <Wire.h>
 #include <RTClib.h>  // RTC modülünü kullanmak için gerekli kütüphane
 
