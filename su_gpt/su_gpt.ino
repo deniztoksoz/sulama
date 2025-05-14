@@ -39,7 +39,7 @@ Röleyi kullanarak sulama sistemini kontrol edeceğiz. Haftada 2 gün, her biri 
 Kodda her gün saat 09:00'da sulama başlatılacak ve 14:00'te sulama duracaktır.
 */
 //
-
+//
 #include <Wire.h>
 #include <RTClib.h>  // RTC modülünü kullanmak için gerekli kütüphane
 
