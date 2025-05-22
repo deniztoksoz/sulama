@@ -5,6 +5,12 @@ Bu komutu EEPROM’a kaydeder.
 DS3231'den zamanı kontrol ederek zamanı geldiğinde bir röle çıkışını aktif eder.
 Çalışma süresi bittiğinde röleyi kapatır.
 Not: EEPROM'u uzun ömürlü kullanmak için sadece ayar değiştiğinde yazmak gerekir. Aşağıdaki kodda bu dikkate alınmıştır.
+
+Donanım Bağlantıları
+DS3231 → I2C (A4-SDA, A5-SCL)
+HC-05 Bluetooth → RX-TX (SoftwareSerial)
+Röle → Dijital pin (örneğin D8)
+
 */
 //------------------------------------------------------------------------------------------------------------------------
 // manuel saatli açma kapamalı..
