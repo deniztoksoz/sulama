@@ -1,3 +1,14 @@
+/*
+Aşağıda, Arduino Nano, DS3231 saat modülü ve Bluetooth modülü (örneğin HC-05) kullanarak oluşturabileceğin bir otomatik sulama sistemi için örnek bir kod veriyorum. Bu sistem:
+Bluetooth üzerinden gelen komutu alır (örneğin: "2,14:00,5" → 2 gün arayla, saat 14:00’te başlasın ve 5 saat çalışsın).
+Bu komutu EEPROM’a kaydeder.
+DS3231'den zamanı kontrol ederek zamanı geldiğinde bir röle çıkışını aktif eder.
+Çalışma süresi bittiğinde röleyi kapatır.
+Not: EEPROM'u uzun ömürlü kullanmak için sadece ayar değiştiğinde yazmak gerekir. Aşağıdaki kodda bu dikkate alınmıştır.
+*/
+
+
+
 #include <Wire.h>
 #include <RTClib.h>
 #include <EEPROM.h>
