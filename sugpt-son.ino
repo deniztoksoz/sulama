@@ -77,7 +77,7 @@ void loop() {
 
 void checkBluetooth() {
   if (bluetooth.available()) {
-    String input = bluetooth.readStringUntil('\n');
+    String input = bluetooth.readStringUntil('#');
     input.trim();
    //input.toUpperCase();
 
